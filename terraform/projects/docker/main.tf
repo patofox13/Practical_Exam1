@@ -30,7 +30,7 @@ resource "local_file" "private_key" {
   file_permission = "0400"
 }
 module "instance" {
-  source        = "github.com/patofox13/kis-onpk/terraform/modules"
+  source        = "github.com/patofox13/Practical_Exam1/main/terraform/modules"
   project       = local.project
   environment   = var.environment
   my_public_ip  = data.http.my_public_ip.response_body
